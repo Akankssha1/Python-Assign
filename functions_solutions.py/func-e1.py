@@ -1,9 +1,8 @@
-def calculate_average(nums):
+def calculate_average(*nums):
     if not nums:
         return 0
-    return sum(nums) / len(nums)
-
-n = int(input())
-my_list = [i for i in range(n)]
-print(calculate_average(my_list))
-
+    num_sum=sum(nums)
+    avg=num_sum/len(nums)
+    return avg
+print(calculate_average(5,10,15,20))
+print(calculate_average()) 
